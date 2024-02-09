@@ -1,0 +1,34 @@
+body{
+    background-color: aqua;
+} 
+
+header {
+    
+    text-align: center;
+    font: 30pt Arial ;
+}
+
+section {
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center
+    ;
+}
+    div {
+        text-align: center;
+        font: 20pt Arial;
+    }
+   
+    
+    img {
+        text-align: center;
+    }
+ footer {
+     margin: auto;
+     font: 20pt Arial;
+     text-align: center;
+     
+ }
