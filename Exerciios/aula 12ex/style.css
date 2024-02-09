@@ -15,7 +15,13 @@ section {
     border-radius: 10px;
     width: 500px;
 }
-
+    div {
+        text-align: center;
+        font: 20pt Arial;
+    }
+    img {
+        text-align: center;
+    }
  footer {
      margin: auto;
      font: 20pt Arial;
