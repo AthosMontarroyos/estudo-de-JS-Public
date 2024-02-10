@@ -11,14 +11,40 @@ function verificar() {
         
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
-        var gênero = ''
-        if (fsex[0].checked) {
-            gênero = ('Homem')}
-            else if (fsex[1].checked) {
-                gênero = ('Mulher')
-            }
-            res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
-            
-        
+        var genero = ''
+        var img = document.createElement('img')
+        img.setAttribute('img', 'foto')
+       if (fsex[0].checked ) {
+        genero = 'Homem'
+        if (idade >=0 && idade <10) {
+            //criança
+            img.setAttribute('src','criançaM.png' )
+        } else if (idade <21) {
+            img.setAttribute('src', 'adolecenteM.png')
+                           //adolecemte
+        }  else if(idade <50){
+            //Adulto
+            img.setAttribute('src', 'adultoM.png')
+        } else {
+            //idoso
+            img.setAttribute('src', 'IdosoM.png')
+        }
+       }     else if (fsex[1].checked) {
+        genero = 'Mulher'
+        if (idade >=0 && idade <10) {
+            //criança
+        } else if (idade <21) {
+                           //adolecemte
+        }  else if(idade <50){
+            //Adulto
+        } else {
+            //idoso 
+        }
+       }
+       
+        res.style.textAling = 'center'
+        res.innerHTML = `dectamos o gênero ${genero} com idade ${idade} anos`
+        res.appendChild(img)
+        res.style.textAling = 'center'
     }
     }

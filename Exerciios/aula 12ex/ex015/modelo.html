@@ -6,7 +6,7 @@
     <title>Exercicio Aula 12</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="verificar()">
     <header>
         <h1>Verificador De Idade.
         </h1>
@@ -15,7 +15,7 @@
     <section>
       <div>
         <p>Ano de nascimento:</p>
-        <input type="number" name="txtano"  id="txtano" min="0">
+        <input type="number" name="txtano" id="txtano" min="0">
         <p>Sexo:</p>
         <input type="radio" name="radsex" id="masc">
         <label for="masc">Masculino</label>
@@ -23,8 +23,9 @@
         <label for="fem">Feminino</label>
         <input type="button" value="Verificar" onclick="verificar()">
       </div>
-            <div>
-                <p>Preencha os Dados acima para ver o resultado</p>
+            <div id="res">
+                
+                Preencha os Dados acima para ver o resultado
             </div>
         
     </section>
