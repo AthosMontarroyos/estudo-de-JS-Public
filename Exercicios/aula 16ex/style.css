@@ -8,17 +8,23 @@ header {
     font: 30pt Arial ;
 }
 
-section {
-    margin: auto;
+
+  select#flista {
+    width: 150px;
     background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    width: 500px;
-}
+    text-align: center;
+
+  }
 
  footer {
      margin: auto;
      font: 20pt Arial;
      text-align: center;
      
- }
+ } 
+ div { margin: auto;
+ background-color: rgb(255, 255, 255);
+ padding: 15px;
+ border-radius: 10px;
+ width: 500px;
+ text-align: center; }
